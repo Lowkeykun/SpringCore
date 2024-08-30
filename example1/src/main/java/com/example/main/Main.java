@@ -16,6 +16,7 @@ public class Main {
         // Configuration of beans
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
+        // getting the bean from the class
         Vehicle moveVehicle = context.getBean(Vehicle.class);
         System.out.println("Vehicle name spring context: " + moveVehicle.getName());
 
