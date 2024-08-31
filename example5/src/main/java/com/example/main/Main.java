@@ -18,5 +18,6 @@ public class Main {
 
         // it will print the desired output
         myVehicle1.sayHello();
+        myVehicle1.moveVehicle();
     }
 }

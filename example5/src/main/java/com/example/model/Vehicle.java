@@ -17,4 +17,10 @@ public class Vehicle {
     public void sayHello(){
         System.out.println("Hello World!");
     }
+
+    public void moveVehicle(){
+         Vehicle myVehicle = new Vehicle();
+         myVehicle.setName("Ford Raptor");
+         System.out.println(myVehicle.getName());
+    }
 }
