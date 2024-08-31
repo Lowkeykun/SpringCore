@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
 @Configuration
-@ComponentScan(basePackageClasses = com.example.model.Vehicle.class)
+@ComponentScan(basePackages = "com.example.model")
 public class ProjectConfig {
 
 
