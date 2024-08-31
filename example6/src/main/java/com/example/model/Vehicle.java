@@ -1,6 +1,7 @@
 package com.example.model;
 
 import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -22,5 +23,10 @@ public class Vehicle {
     @PostConstruct
     public void initialize(){
         this.name = "Ford Raptor";
+    }
+
+    @PreDestroy
+    public void destroy(){
+        System.out.println("Selling " +name);
     }
 }

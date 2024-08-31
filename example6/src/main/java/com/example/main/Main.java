@@ -20,5 +20,8 @@ public class Main {
         // it will print the desired output
         myVehicle1.sayHello();
 
+        // We use @PreDestroy to execute the method before destroying the bean
+        context.close();
+
     }
 }
