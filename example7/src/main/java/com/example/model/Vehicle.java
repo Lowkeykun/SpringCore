@@ -1,5 +1,6 @@
 package com.example.model;
 
+// I remove the @Component annotation because I am handling the behavior of beans
 public class Vehicle {
     private String name;
 
