@@ -6,17 +6,20 @@ import org.springframework.stereotype.Component;
 @Component
 public class Person {
 
-    // Uses a default constructor to check its initialization
-    public Person(){
-        System.out.println("Initialization of person constructor");
-    }
-
     // instance variables were we declare a value for it
     private String name = "Jerome";
 
     // Autowired field injection is used, to instruct spring that person has a dependency of vehicle class
 //    @Autowired
     private Vehicle vehicle;
+
+
+    // Using Autowired annotation to the constructor (it is recommended for the production for security purposes)
+    @Autowired
+    public Person(Vehicle vehicle){
+        System.out.println("Initialization of person constructor");
+        this.vehicle = vehicle;
+    }
 
     public String getName(){
         return name;
@@ -31,7 +34,7 @@ public class Person {
     }
 
     // Autowired annotation is used in the setter, to instruct spring that person has a dependency of vehicle class
-    @Autowired
+//    @Autowired
     public void setVehicle(Vehicle vehicle){
         this.vehicle = vehicle;
     }
