@@ -15,7 +15,7 @@ public class Person {
     private String name = "Jerome";
 
     // Autowired field injection is used, to instruct spring that person has a dependency of vehicle class
-    @Autowired
+//    @Autowired
     private Vehicle vehicle;
 
     public String getName(){
@@ -30,6 +30,8 @@ public class Person {
         this.name = name;
     }
 
+    // Autowired annotation is used in the setter, to instruct spring that person has a dependency of vehicle class
+    @Autowired
     public void setVehicle(Vehicle vehicle){
         this.vehicle = vehicle;
     }
