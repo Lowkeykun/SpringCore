@@ -42,7 +42,7 @@ public class Main {
            context.registerBean("honda", Vehicle.class, hondaSupplier);
        }
 
-       // Initializing temporary values for the objects to handle the values
+       // Initializing temporary (null) values for the objects to handle the values
        Vehicle fordVehicle = null;
        Vehicle hondaVehicle = null;
 
