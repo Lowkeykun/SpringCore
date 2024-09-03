@@ -24,6 +24,7 @@
         <module>example_12</module>
         <module>example_13</module>
         <module>example_14</module>
+        <module>example_15</module>
     </modules>
 
     <properties>
