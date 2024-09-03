@@ -14,7 +14,7 @@ public class Main {
 
         System.out.println("Before retrieving the bean in Spring context");
         /* Using @Lazy, where instantiation take place when the bean is call unlike @Eager (default) where it creates the
-           bean during application startup
+           bean during startup of the application
         */
         Person person = context.getBean(Person.class);
         System.out.println("After retrieving the bean in Spring context");
