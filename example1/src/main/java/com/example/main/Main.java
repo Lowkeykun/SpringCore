@@ -7,7 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
 
     public static void main(String[] args) {
-        // Non Spring
+        // Non-Spring
         Vehicle myVehicle = new Vehicle();
         myVehicle.setName("Honda Type-R");
         System.out.println("Vehicle name non spring context: " + myVehicle.getName());
