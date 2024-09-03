@@ -8,7 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
 
     public static void main(String[] args) {
-        // Configuration of beans where we construct in the xml in the resources folder and we use AnnotationConfigApplicationContext
+        // Configuration of beans and we use AnnotationConfigApplicationContext
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
         // gets the bean of each class
