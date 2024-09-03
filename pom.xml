@@ -19,11 +19,11 @@
         <module>example7</module>
         <module>example8</module>
         <module>example9</module>
-        <module>example10</module>
-        <module>example11</module>
-        <module>example12</module>
-        <module>example13</module>
-        <module>example14</module>
+        <module>example_10</module>
+        <module>example_11</module>
+        <module>example_12</module>
+        <module>example_13</module>
+        <module>example_14</module>
     </modules>
 
     <properties>
