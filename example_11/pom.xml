@@ -11,7 +11,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>example13</artifactId>
+    <artifactId>example_11</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 <!--    <properties>-->
