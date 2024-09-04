@@ -34,7 +34,9 @@ public class Main {
         String playMusicStatus = myVehicleService.playMusic(isStarted, mySong);
         String breakStatus = myVehicleService.applyBreak(isStarted);
 
-
+        System.out.println(moveVehicleStatus);
+        System.out.println(playMusicStatus);
+        System.out.println(breakStatus);
 
 
 

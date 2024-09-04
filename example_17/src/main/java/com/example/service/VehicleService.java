@@ -2,6 +2,7 @@ package com.example.service;
 
 import com.example.model.Song;
 import com.example.model.Vehicle;
+import com.example.service.interfaces.LogAspect;
 import com.example.service.interfaces.Speakers;
 import com.example.service.interfaces.Tyres;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,7 @@ public class VehicleService {
         this.tyres = tyres;
     }
     // service method, that calls the interface method
+    @LogAspect
     public String playMusic(boolean isVehicleStarted, Song song){
         return speakers.makeSound(song);
     }
@@ -33,6 +35,7 @@ public class VehicleService {
     // service method, that calls the interface method
     public String moveVehicle(boolean isVehicleStarted){
         return tyres.rotate();
+//        throw new NullPointerException("NullPointerException occur!");
     }
 
     public String applyBreak(boolean isVehicleStarted){
